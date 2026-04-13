@@ -1,4 +1,23 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import SplitText from "gsap/SplitText";
+
 const Hero = () => {
+  useGSAP(() => {
+    const heroSplit = new SplitText(".title", { type: "chars, words" });
+
+    const subtitleSplit = new SplitText(".subtitle", { type: "lines" });
+
+    heroSplit.chars.forEach((char) => char.classList.add("text-gradient"));
+
+    gsap.from(heroSplit.chars, {
+      yPercent: 50,
+      opacity: 0,
+      stagger: 0.05,
+      ease: "expo.out",
+      duration: 1.4,
+    })
+  }, []);
   return (
     <>
       <section id="hero" className="noisy">
