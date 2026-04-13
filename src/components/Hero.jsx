@@ -14,10 +14,32 @@ const Hero = () => {
       yPercent: 50,
       opacity: 0,
       stagger: 0.05,
-      ease: "expo.out",
+      ease: "expo.inOut",
       duration: 1.4,
-    })
+    });
+
+    gsap.from(subtitleSplit.lines, {
+      yPercent: 50,
+      opacity: 0,
+      stagger: 0.05,
+      ease: "expo.out",
+      duration: 1,
+      delay: 1,
+    });
+
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: "#hero",
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      })
+      .to(".left-leaf", { y: 150 }, 0)
+      .to(".right-leaf", { y: 200 }, 0);
   }, []);
+
   return (
     <>
       <section id="hero" className="noisy">

@@ -19,7 +19,7 @@ const Navbar = () => {
         backgroundColor: "#00000050",
         backdropFilter: "blur(10px)",
         duration: 1,
-        ease: "power1.inOut",
+        ease: "expo.inOut",
       },
     );
   });
