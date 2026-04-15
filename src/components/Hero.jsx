@@ -32,7 +32,7 @@ const Hero = () => {
       delay: 1,
     });
 
-    gsap.from('.video', {
+    gsap.from(".video", {
       opacity: 0,
       ease: "expo.inOut",
       duration: 1.4,
@@ -52,7 +52,7 @@ const Hero = () => {
       .to(".right-leaf", { y: 200 }, 0);
 
     gsap.set([".left-leaf", ".right-leaf"], {
-      filter: "blur(15px)"
+      filter: "blur(15px)",
     });
 
     gsap.to([".left-leaf", ".right-leaf"], {
@@ -124,7 +124,7 @@ const Hero = () => {
           muted
           playsInline
           preload="auto"
-          src="public/videos/output.mp4"
+          src="/videos/output.mp4"
         />
       </div>
     </>
