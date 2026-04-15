@@ -19,55 +19,55 @@ const navLinks = [
 
 const cocktailLists = [
  {
-	name: "Chapel Hill Shiraz",
-	country: "AU",
-	detail: "Battle",
-	price: "$10",
+	name: "Lavender Franch",
+	country: "France",
+	detail: "Champagne Flute",
+	price: "$18",
  },
  {
-	name: "Caten Malbee",
-	country: "AU",
-	detail: "Battle",
-	price: "$49",
- },
- {
-	name: "Rhino Pale Ale",
-	country: "CA",
+	name: "Arak Attack",
+	country: "Indonesia",
 	detail: "750 ml",
-	price: "$20",
+	price: "$67",
  },
  {
-	name: "Irish Guinness",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
+	name: "Piña Almibar",
+	country: "Mexico",
+	detail: "350 ml",
+	price: "$14",
+ },
+ {
+	name: "Elderflower Collins Royale",
+	country: "UK",
+	detail: "Highball",
+	price: "$18",
  },
 ];
 
 const mockTailLists = [
  {
-	name: "Tropical Bloom",
-	country: "US",
-	detail: "Battle",
+	name: "Honey Citrus Mint Cooler Deluxe",
+	country: "UK",
+	detail: "Collins",
 	price: "$10",
  },
  {
-	name: "Passionfruit Mint",
-	country: "US",
-	detail: "Battle",
-	price: "$49",
+	name: "Pineapple Mint Nusantara Fizz",
+	country: "Indonesia",
+	detail: "Highball",
+	price: "$79",
  },
  {
-	name: "Citrus Glow",
-	country: "CA",
-	detail: "750 ml",
-	price: "$20",
+	name: "Tropical Mango Spritz",
+	country: "Australia",
+	detail: "400ml",
+	price: "$11",
  },
  {
-	name: "Lavender Fizz",
-	country: "IE",
-	detail: "600 ml",
-	price: "$29",
+	name: "Elderflower Iced Fizz",
+	country: "Italy",
+	detail: "Highball",
+	price: "$12",
  },
 ];
 

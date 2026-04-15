@@ -32,6 +32,13 @@ const Hero = () => {
       delay: 1,
     });
 
+    gsap.from('.video', {
+      opacity: 0,
+      ease: "expo.inOut",
+      duration: 1.4,
+      delay: 1,
+    });
+
     gsap
       .timeline({
         scrollTrigger: {
@@ -43,6 +50,16 @@ const Hero = () => {
       })
       .to(".left-leaf", { y: 150 }, 0)
       .to(".right-leaf", { y: 200 }, 0);
+
+    gsap.set([".left-leaf", ".right-leaf"], {
+      filter: "blur(15px)"
+    });
+
+    gsap.to([".left-leaf", ".right-leaf"], {
+      filter: "blur(0px)",
+      duration: 3,
+      ease: "expo.out",
+    });
 
     const startValue = isMobile ? "top 50%" : "center 60%";
     const endValue = isMobile ? "120% top" : "bottom top";
