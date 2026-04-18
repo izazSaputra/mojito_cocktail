@@ -14,9 +14,10 @@ const Art = () => {
       scrollTrigger: {
         trigger: "#art",
         start,
-        end: "bottom center",
-        scrub: 1.5,
+        end: "+=120%",
+        scrub: 0.5,
         pin: true,
+        anticipatePin: 1,
       },
     });
 
